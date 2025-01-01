@@ -1,0 +1,9 @@
+{
+    "C_Cpp.default.compilerPath": "d:\\DevelopEnvironment\\ARM_GNU_Toolchain\\bin\\arm-none-eabi-gcc.exe",
+    "files.associations": {
+        "app_remote.h": "c",
+        "main.h": "c",
+        "string": "c",
+        "int_si24r1.h": "c"
+    }
+}
