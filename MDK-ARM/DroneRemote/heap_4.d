@@ -1,0 +1,14 @@
+droneremote\heap_4.o: ..\Mid\FreeRTOS\Portable\heap_4.c
+droneremote\heap_4.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+droneremote\heap_4.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+droneremote\heap_4.o: ..\Mid\FreeRTOS\Include\FreeRTOS.h
+droneremote\heap_4.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+droneremote\heap_4.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+droneremote\heap_4.o: ..\Mid\FreeRTOS\FreeRTOSConfig.h
+droneremote\heap_4.o: ..\Mid\FreeRTOS\Include\projdefs.h
+droneremote\heap_4.o: ..\Mid\FreeRTOS\Include\portable.h
+droneremote\heap_4.o: ..\Mid\FreeRTOS\Include\deprecated_definitions.h
+droneremote\heap_4.o: ..\Mid\FreeRTOS\Portable\portmacro.h
+droneremote\heap_4.o: ..\Mid\FreeRTOS\Include\mpu_wrappers.h
+droneremote\heap_4.o: ..\Mid\FreeRTOS\Include\task.h
+droneremote\heap_4.o: ..\Mid\FreeRTOS\Include\list.h

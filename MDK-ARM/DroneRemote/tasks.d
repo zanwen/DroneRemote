@@ -1,0 +1,16 @@
+droneremote\tasks.o: ..\Mid\FreeRTOS\Source\tasks.c
+droneremote\tasks.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+droneremote\tasks.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+droneremote\tasks.o: ..\Mid\FreeRTOS\Include\FreeRTOS.h
+droneremote\tasks.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+droneremote\tasks.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+droneremote\tasks.o: ..\Mid\FreeRTOS\FreeRTOSConfig.h
+droneremote\tasks.o: ..\Mid\FreeRTOS\Include\projdefs.h
+droneremote\tasks.o: ..\Mid\FreeRTOS\Include\portable.h
+droneremote\tasks.o: ..\Mid\FreeRTOS\Include\deprecated_definitions.h
+droneremote\tasks.o: ..\Mid\FreeRTOS\Portable\portmacro.h
+droneremote\tasks.o: ..\Mid\FreeRTOS\Include\mpu_wrappers.h
+droneremote\tasks.o: ..\Mid\FreeRTOS\Include\task.h
+droneremote\tasks.o: ..\Mid\FreeRTOS\Include\list.h
+droneremote\tasks.o: ..\Mid\FreeRTOS\Include\timers.h
+droneremote\tasks.o: ..\Mid\FreeRTOS\Include\stack_macros.h

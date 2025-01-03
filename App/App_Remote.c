@@ -33,7 +33,7 @@ void App_Remote_StickScan(void) {
     // 摇杆回弹自适应调整
     App_Remote_MidAdjust(&rcdata);
 
-    // LOG_DEBUG("thr: %u, yaw: %u, pit: %u, rol: %u", rcdata.THR, rcdata.YAW, rcdata.PIT, rcdata.ROL)
+    LOG_DEBUG("thr: %u, yaw: %u, pit: %u, rol: %u", rcdata.THR, rcdata.YAW, rcdata.PIT, rcdata.ROL)
 }
 
 void App_Remote_SlidingWindowFilter(RemoteControlData_t *pRCData) {

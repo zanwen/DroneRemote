@@ -4,6 +4,7 @@
         "app_remote.h": "c",
         "main.h": "c",
         "string": "c",
-        "int_si24r1.h": "c"
+        "int_si24r1.h": "c",
+        "int_ip5305t.h": "c"
     }
 }

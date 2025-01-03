@@ -1,0 +1,14 @@
+droneremote\stream_buffer.o: ..\Mid\FreeRTOS\Source\stream_buffer.c
+droneremote\stream_buffer.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+droneremote\stream_buffer.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+droneremote\stream_buffer.o: ..\Mid\FreeRTOS\Include\FreeRTOS.h
+droneremote\stream_buffer.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+droneremote\stream_buffer.o: ..\Mid\FreeRTOS\FreeRTOSConfig.h
+droneremote\stream_buffer.o: ..\Mid\FreeRTOS\Include\projdefs.h
+droneremote\stream_buffer.o: ..\Mid\FreeRTOS\Include\portable.h
+droneremote\stream_buffer.o: ..\Mid\FreeRTOS\Include\deprecated_definitions.h
+droneremote\stream_buffer.o: ..\Mid\FreeRTOS\Portable\portmacro.h
+droneremote\stream_buffer.o: ..\Mid\FreeRTOS\Include\mpu_wrappers.h
+droneremote\stream_buffer.o: ..\Mid\FreeRTOS\Include\task.h
+droneremote\stream_buffer.o: ..\Mid\FreeRTOS\Include\list.h
+droneremote\stream_buffer.o: ..\Mid\FreeRTOS\Include\stream_buffer.h

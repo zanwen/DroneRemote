@@ -1,0 +1,12 @@
+droneremote\port.o: ..\Mid\FreeRTOS\Portable\port.c
+droneremote\port.o: ..\Mid\FreeRTOS\Include\FreeRTOS.h
+droneremote\port.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+droneremote\port.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+droneremote\port.o: ..\Mid\FreeRTOS\FreeRTOSConfig.h
+droneremote\port.o: ..\Mid\FreeRTOS\Include\projdefs.h
+droneremote\port.o: ..\Mid\FreeRTOS\Include\portable.h
+droneremote\port.o: ..\Mid\FreeRTOS\Include\deprecated_definitions.h
+droneremote\port.o: ..\Mid\FreeRTOS\Portable\portmacro.h
+droneremote\port.o: ..\Mid\FreeRTOS\Include\mpu_wrappers.h
+droneremote\port.o: ..\Mid\FreeRTOS\Include\task.h
+droneremote\port.o: ..\Mid\FreeRTOS\Include\list.h

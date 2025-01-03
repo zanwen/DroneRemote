@@ -39,3 +39,4 @@ droneremote\main.o: ../Core/Inc/usart.h
 droneremote\main.o: ../Core/Inc/gpio.h
 droneremote\main.o: ../App/App_Remote.h
 droneremote\main.o: ../Int/Int_Si24R1.h
+droneremote\main.o: ../Int/Int_IP5305T.h

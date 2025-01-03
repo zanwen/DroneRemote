@@ -18,6 +18,8 @@ void Int_SI24R1_InitTxMode(void) {
     Int_SI24R1_WriteByte(SPI_WRITE_REG | RF_CH, 40);      // 选择射频通道40
     Int_SI24R1_WriteByte(SPI_WRITE_REG | RF_SETUP, 0x0f); // 数据传输率2Mbps，发射功率7dBm
     Int_SI24R1_WriteByte(SPI_WRITE_REG | CONFIG, 0x0e); // CRC使能，16位CRC校验，上电，发送模式
+    Int_SI24R1_WriteByte(SPI_WRITE_REG | STATUS, 0xff);
+    Int_SI24R1_WriteByte(FLUSH_TX, 0xff);
 
     LOG_DEBUG("Int_SI24R1_InitTxMode done")
     uint8_t buf[5]={0};
@@ -37,6 +39,7 @@ void Int_SI24R1_InitRxMode(void) {
     Int_SI24R1_WriteByte(SPI_WRITE_REG | RF_SETUP, 0x0f); // 数据传输率2Mbps，发射功率7dBm
     Int_SI24R1_WriteByte(SPI_WRITE_REG | CONFIG, 0x0f); // CRC使能，16位CRC校验，上电，接收模式
     Int_SI24R1_WriteByte(SPI_WRITE_REG | STATUS, 0xff); // 清除所有的中断标志位
+    Int_SI24R1_WriteByte(FLUSH_RX, 0xff); // 清除RX FIFO
     SI24R1_CE_HIGH;
 
     LOG_DEBUG("Int_SI24R1_InitRxMode done")
@@ -88,7 +91,7 @@ void Int_SI24R1_ReadBytes(uint8_t reg, uint8_t *buf, uint8_t size) {
 uint8_t Int_SI24R1_RxPacket(uint8_t *rxbuf) {
     uint8_t state;
     state = Int_SI24R1_ReadByte(SPI_READ_REG + STATUS);  // 读取状态寄存器的值
-    Int_SI24R1_WriteByte(SPI_WRITE_REG + STATUS, state); // 清除RX_DS中断标志
+    Int_SI24R1_WriteByte(SPI_WRITE_REG + STATUS, state); // 清除RX_DR中断标志
 
     if (state & STATUS_RX_DR) {                                   // 接收到数据
         Int_SI24R1_ReadBytes(RD_RX_PLOAD, rxbuf, RX_PLOAD_WIDTH); // 读取数据

@@ -28,6 +28,7 @@
 /* USER CODE BEGIN Includes */
 #include "App_Remote.h"
 #include "Int_Si24R1.h"
+#include "Int_IP5305T.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -105,16 +106,16 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
     LOG_DEBUG("hello world")
-    RemoteControlPacket_t packet;
+    FreeRTOS_Start();
+    // uint8_t cnt = 0;
     while (1) {
-        HAL_GPIO_TogglePin(POWER_KEY_GPIO_Port, POWER_KEY_Pin);
+        // HAL_Delay(100);
+        // if (++cnt >= 10) {
+        //     Int_IP5305T_Wakeup();
+        //     cnt = 0;
+        // }
 
-        App_Remote_StickScan();
-        App_Remote_KeyScan();
-        HAL_Delay(100);
 
-        App_Remote_BuildPacket(&rcdata, &packet);
-        Int_SI24R1_TxPacket((uint8_t *)&packet);
         // HAL_Delay(500);
 
     /* USER CODE END WHILE */
